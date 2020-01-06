@@ -23,7 +23,7 @@ class ResUsers(models.Model):
         'Stores',
     )
 
-    @api.multi
+    
     def write(self, values):
         res = super().write(values)
         # clear cache rules when store changes
